@@ -1,0 +1,35 @@
+The following is a recommended folder hierarchy for Eclipse Java projects:
+
+```
+Project
+├── src
+│   └── main
+│       └── java
+│           └── <package_name>
+│               └── <class_name>.java
+```
+
+The `src` directory contains all of the source code for your project. The `main` directory contains the main source code for your project, and the `java` directory contains the Java source code for your project.
+
+You should create a package for each group of related classes. For example, if you are writing a program to manage a library, you might create packages for the different types of library items (books, movies, etc.).
+
+Within each package, you should create a class file for each class. The name of the class file should be the same as the name of the class.
+
+Here is an example of a folder hierarchy for a simple Java project:
+
+```
+Project
+├── src
+│   └── main
+│       └── java
+│           └── com
+│               └── example
+│                   └── library
+│                       └── Book.java
+```
+
+This project has a single package, `com.example.library`, which contains a single class, `Book`.
+
+You can also create additional folders within the `src` directory to organize your code. For example, you might create a folder for unit tests or a folder for integration tests.
+
+Eclipse will automatically detect the folder hierarchy in your project and create a Package Explorer view that shows the packages and classes in your project. You can use the Package Explorer view to navigate to your code and open files for editing.
