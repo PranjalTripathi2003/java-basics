@@ -10,7 +10,7 @@ public class learn_arrayList_or_linkedList_for_list {
     public static void main(String[] args) {
         /*
          * // Creating an Array of integer type of length of 5.
-         * 
+         *
          * int[] marks = new int[30];
          * marks[0] = 0;
          * marks[29] = 29;
@@ -29,7 +29,7 @@ public class learn_arrayList_or_linkedList_for_list {
         // By default an ArrayList creates an Array of size 10.
         ArrayList<Integer> marks = new ArrayList<>(); // The "<>" angled brackets suggest that we are using a class from
                                                       // the collection framework of Java language. It is absolutely not
-                                                      // necessery to put, but then it would be a "raw" use of that
+                                                      // necessery to put, but then it would be a "raw" use of that (raw means without defining any data type)
                                                       // collection class.
 
         marks.add(1); // Adds an element at the end of an ArrayList
