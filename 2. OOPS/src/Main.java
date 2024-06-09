@@ -24,7 +24,7 @@ public class Main {
         p1.age = 19;
         p1.name = "Pranjal";
         System.out.println(p1.name);
-        p1.walk(2);
+        p1.walk(2); //
 
         /*
         Person p2 = new Person("Nikita", 18); // Here we overloaded the constructor "Person"
@@ -72,7 +72,7 @@ class Person {
 
 
     int age = 10;
-    String name = "Rajat";
+    String name = "Rajat"; //
 
     // THE ABOVE 2 ARE CALLED AS PROPERTIES, WHEN WE WRITE A FUNCTION WE CALL IT AS METHOD OR BEHAVIOUR THAT DEFINES WHAT IT DOES.
     void walk() {
