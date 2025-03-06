@@ -1,28 +1,27 @@
-/*
--Inside of Sets, duplicate elements are not allowed
+// Tree Set defines the property of Set , as well as uses Binary Search Tree, which means all the elements will be unique and in sorted form. We will get it in ascending order.
 
-- Sets mainly consist of HashSet, LinkedHashSet, TreeSet
-*/
-import java.util.HashSet;
+import java.util.LinkedHashSet;
 import java.util.Set;
-public class LearnHashSet {
+import java.util.TreeSet;
+
+public class MyTreeSet {
     public static void main(String[] args) {
-        Set<Integer> set = new HashSet<>();
-        // Instead of writing "Set<Integer>" we can also write "HashSet<Integer>" since HashSet belongs to Set only, but that will be more work, we have seen this type of syntax in priority queue also.
+        Set<Integer> set = new TreeSet<>(); // O(logn)
 
         // Adding elements
         set.add(10);
+        set.add(4);
+        set.add(9);
         set.add(43);
-        set.add(333);
-        set.add(432);
 
-        // Because of hashing that is going inside the set all of them will be printed out in a random order, hashing is used for security reasons.
+        // Because of hashing that is going inside the set all of them will be printed
+        // out in a random order, hashing is used for security reasons.
 
-        //Set creates a hash of each element, that hash is then given to the collection framework
+        // Set creates a hash of each element, that hash is then given to the collection
+        // framework
 
         // Each element will have an unique hash.
         System.out.println(set);
-
 
         // To remove an element from the Hash Set
         set.remove(43);
@@ -42,10 +41,5 @@ public class LearnHashSet {
         // To remove all of the elements
         set.clear();
         System.out.println(set);
-
-
-
-
-
     }
 }
