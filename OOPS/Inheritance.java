@@ -8,7 +8,7 @@ Protected - Child class and child class outside package.
 
 public class Inheritance {
     public static void main(String[] args) {
-        personTwo p1 = new personTwo();
+        humanTwo p1 = new humanTwo();
         p1.printName("Pranjal");
 
         // All of the objects have a common parent called as Object class which is
@@ -39,15 +39,15 @@ class Person {
 
 }
 
-class personTwo extends Person {
+class humanTwo extends Human {
 
-    public personTwo(char Gender) {
+    public humanTwo(char Gender) {
         super(Gender); // super() keyword is used to call the constructer of the parent class.
                        // Automatically called if the orignal constructor, i.e, without the overloading
                        // is written.
     }
 
-    public personTwo() {
+    public humanTwo() {
 
     }
 

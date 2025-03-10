@@ -9,7 +9,7 @@
 
 - "." operator is used for accessing either the BEHAVIOURS(int, string)  or PROPERTIES(functions/methods) both.
 
-- Function called inside of a class is a METHOD.
+- Function called inside a class is a METHOD.
 
 - Java does not support methods within a method, i.e , we CANNOT HAVE NESTED METHODS! so dont try to write a method inside of the "main" method of the public java main class or simply the first class I have written in this code, we write it everytime the main class in case I FORGET THAT .
 
@@ -17,7 +17,7 @@
 
 public class Polymorphism {
     public static void main(String[] args) {
-        Person p1 = new Person(); // Person() is the default constructor. Default constructor takes no arguments.
+        Human p1 = new Human(); // Person() is the default constructor. Default constructor takes no arguments.
         // Constructor constructs a new object. It initializes the object for use. "p1"
         // is the object, "Person()" is the constructor.
         // creation of OBJECT of Person class, so that it functions/methods could
@@ -35,10 +35,10 @@ public class Polymorphism {
          * 
          */
 
-        Person p3 = new Person();
+        Human p3 = new Human();
         System.out.println(p3.name);
         System.out.println(p3.age);
-        System.out.println("Number of persons using Person Constructor: " + Person.count); // Here we did create an
+        System.out.println("Number of persons using Person Constructor: " + Human.count); // Here we did create an
                                                                                            // object of the Person
                                                                                            // class, but it is
                                                                                            // absolutely not necessary
@@ -48,13 +48,13 @@ public class Polymorphism {
     }
 }
 
-class Person {
+class Human {
     static int count; // To use anything(variable, method etc.) which is static, we need not
                       // initialize an object of it class first, we can just use it without creating
                       // the object of its class. (Class contains -> Properties, Functions) (Objects
                       // created from -> Classes)
 
-    public Person() {
+    public Human() {
         count++;
         System.out.println("This is the message of the object p1 being initialized via a constructor that we defined.");
 
@@ -68,7 +68,7 @@ class Person {
      * }
      */
 
-    public Person(String name, int age) {
+    public Human(String name, int age) {
         this(); // Using this() keyword we are able to call the properties of non-overloaded
                 // Person() constructor to the overloaded one, if we remove this the count will
                 // show as '1' until we add count++ in the overloaded constructor, but rather we
@@ -84,6 +84,9 @@ class Person {
 
     int age = 10;
     String name = "Rajat"; //
+
+    public Human(char gender) {
+    }
 
     // THE ABOVE 2 ARE CALLED AS PROPERTIES, WHEN WE WRITE A FUNCTION WE CALL IT AS
     // METHOD OR BEHAVIOUR THAT DEFINES WHAT IT DOES.
